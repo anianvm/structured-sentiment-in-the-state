@@ -45,9 +45,7 @@ dimensions) and FinBERT (a single sentiment score). The resulting outputs are co
 - `data/sentiment/finbert_scores.csv` (+ `_named` variant) — FinBERT baseline
 
 The code used to produce these outputs is retained in `src/sentiment_pipeline/` 
-for transparency. It can be inspected and cited, but should not be re-run because 
-of the API costs. Documented in 
-`src/sentiment_pipeline/README.md`.
+for transparency. Documented in `src/sentiment_pipeline/README.md`.
 
 
 ## Setup
