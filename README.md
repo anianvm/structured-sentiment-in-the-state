@@ -97,7 +97,7 @@ are gitignored because they can be regenerated or are too large to store. See `d
 for details.
 
 
-## Results ↔ thesis
+## Results
 
 `results/tables/README.md` documents the generated CSVs, and
 `results/tables/latex/README.md` maps each generated LaTeX body to its
