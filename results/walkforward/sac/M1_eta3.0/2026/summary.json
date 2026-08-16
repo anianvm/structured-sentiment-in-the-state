@@ -1,0 +1,68 @@
+{
+  "algo": "sac",
+  "arm": "M1",
+  "eta": 3.0,
+  "test_year": 2026,
+  "window": {
+    "test_year": 2026,
+    "train_start": "2020-01-01",
+    "train_end": "2024-12-31",
+    "val_start": "2025-01-01",
+    "val_end": "2025-12-31",
+    "test_start": "2026-01-01",
+    "test_end": "2026-06-30"
+  },
+  "timesteps": 100000,
+  "budget_source": "/workspace/thesis/results/budget/sac.json",
+  "seeds": [
+    {
+      "seed": 0,
+      "val_log_return": 0.20059471216325675,
+      "val_mean_turnover": 0.01450654744581779,
+      "val_days": 250,
+      "test_log_return_dispersion_only": 0.10003282087860833,
+      "test_days": 113,
+      "val_utility": 0.16476589580691964
+    },
+    {
+      "seed": 1,
+      "val_log_return": 0.09843284059628568,
+      "val_mean_turnover": 0.014505189746540255,
+      "val_days": 250,
+      "test_log_return_dispersion_only": 0.04399935977838274,
+      "test_days": 113,
+      "val_utility": 0.07656894576250911
+    },
+    {
+      "seed": 2,
+      "val_log_return": 0.14291423608156367,
+      "val_mean_turnover": 0.010217815208430512,
+      "val_days": 250,
+      "test_log_return_dispersion_only": 0.133498043195672,
+      "test_days": 113,
+      "val_utility": 0.12982024545429743
+    },
+    {
+      "seed": 3,
+      "val_log_return": 0.09574627521507745,
+      "val_mean_turnover": 0.014317216617764942,
+      "val_days": 250,
+      "test_log_return_dispersion_only": 0.08456512076137289,
+      "test_days": 113,
+      "val_utility": 0.07339383747936962
+    },
+    {
+      "seed": 4,
+      "val_log_return": 0.11828986127512511,
+      "val_mean_turnover": 0.012839458715557093,
+      "val_days": 250,
+      "test_log_return_dispersion_only": -0.0822859438382176,
+      "test_days": 113,
+      "val_utility": 0.07458662752059886
+    }
+  ],
+  "selected_seed": 0,
+  "test_log_return": 0.10003282087860833,
+  "test_mean_turnover": 0.021304689027719412,
+  "test_days": 113
+}

@@ -1,0 +1,10 @@
+window selection: algo=ppo candidates=[7, 15, 30, 60] seeds=5 steps=200,000
+train days 926, validation days 252 (identical for every candidate)
+
+k=  7: seeds [0.2655 0.2403 0.2506 0.2687 0.2564] -> IQM +0.2575
+k= 15: seeds [0.2454 0.277  0.2613 0.2555 0.259 ] -> IQM +0.2586
+k= 30: seeds [0.2503 0.2638 0.2515 0.2476 0.2562] -> IQM +0.2526
+k= 60: seeds [0.2495 0.2654 0.249  0.2512 0.2552] -> IQM +0.2520
+
+selected k = 15 -> /workspace/thesis/results/window_selection/ppo.json
+Set config.WINDOW_K to this value before tuning (it fixes the observation space every later stage depends on).

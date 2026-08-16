@@ -1,0 +1,37 @@
+# Environments / editor
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.idea/
+.DS_Store
+.lab
+
+# Regenerable data stays out of git (see data/README.md):
+#   market/  -> scripts/01_download_market_data.py (yfinance)
+#   gkg_raw/ -> src/sentiment_pipeline/collect_gdelt.py (needs a BigQuery project)
+# The sentiment scores in data/sentiment/ and data/news/dow_headlines.csv.gz
+# ARE committed: they are paid API outputs and cannot be reproduced exactly.
+data/market/
+data/news/gkg_raw/
+
+# Experiment outputs ARE committed -- they are the evidence behind every
+# number in the thesis and the co-author reads them from this repo. Only the
+# model checkpoints stay out: ~10 GB of weights that GitHub cannot hold and
+# no analysis reads (evaluation consumes the ledgers and summaries; the
+# weights live on the local machine for any later re-rollout).
+results/**/model_seed*.zip
+
+# Secrets — never commit
+.env
+
+# Cloud-pod run orchestration; operational tooling, not part of the published artifact.
+lab/
+
+# Validation-period ledgers are written by every walk-forward run but read by
+# nothing downstream; the published evidence is the test-period record.
+results/walkforward/**/ledger_val.parquet
+# Raw console logs from the training pods and the tuning search; kept locally,
+# not part of the published artifact.
+results/run_logs/
+results/tuning/ppo_run.log

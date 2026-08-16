@@ -1,0 +1,7 @@
+{
+  "timesteps": 300000,
+  "rule": "smallest step count within 2% of the curve max",
+  "curve_max": 0.2744966461832382,
+  "max_steps": 500000,
+  "eval_every": 100000
+}

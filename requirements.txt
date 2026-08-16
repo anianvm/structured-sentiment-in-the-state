@@ -1,0 +1,19 @@
+# Core experiment stack — exact versions the thesis results were produced
+# with (Python 3.11.5).
+numpy==2.4.6
+pandas==3.0.5
+gymnasium==1.3.0
+stable-baselines3==2.9.0
+torch==2.13.0
+scipy==1.17.1
+matplotlib==3.11.1
+yfinance==1.5.2
+optuna==4.9.0
+pyarrow==25.0.0       # parquet ledgers written by the walk-forward runner
+pytest==9.1.1
+
+# --- Frozen sentiment pipeline only (NOT needed to run the experiments; the
+# --- scored outputs are committed in data/sentiment/). Install on demand:
+# transformers            # FinBERT scoring (src/sentiment_pipeline/score_finbert.py)
+# openai                  # DeepSeek API client (src/sentiment_pipeline/score_llm*.py)
+# google-cloud-bigquery   # GDELT collection (src/sentiment_pipeline/collect_gdelt.py)
